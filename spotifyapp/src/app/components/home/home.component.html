@@ -1,17 +1,17 @@
 <div class="container-fluid">
-    <div class="row">
+    <div class="row d-flex justify-content-between">
         <!-- Comienza el sidebar -->
-        <div class="col-2 col-sm-3 col-xl-3 __sbar">
+        <div class="col-2 col-sm-3 col-xl-3 __sbar" style="max-width: 99%;"> 
             <app-sidebar></app-sidebar>
         </div>
 
         <!-- Comienza el contenido principal -->
-        <div class="col-7 col-sm col-md col-xl-6 __mcontent">
+        <div class="col-10 col-sm col-md col-xl-6 __mcontent" style="max-width: 99%;">
             <app-content></app-content>
         </div>
 
         <!-- Comienza el rightbar de informacion de la musica reproduciendo -->
-        <div class="d-none d-md-flex col-sm-3 col-xl-3 __info">
+        <div class="d-none d-lg-flex col-xl-3 __info">
             <app-rinfo></app-rinfo>
         </div>
 

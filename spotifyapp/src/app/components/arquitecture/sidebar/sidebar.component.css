@@ -1,5 +1,11 @@
-.sidebar{
-    min-height: 90vh;
-    border-radius: 7px;
+.__sidebar{
     background-color: #2B2B2B;
+    border-radius: 7px;
+    height: 90vh;
+}
+
+
+.__side{
+    border-radius: 7px;
+    background-color: #2B2B2B!important;
 }
