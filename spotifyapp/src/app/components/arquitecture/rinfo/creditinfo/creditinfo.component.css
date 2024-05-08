@@ -1,0 +1,30 @@
+.cardSpoti{
+    width: 100%; 
+    background-color: #252525!important; 
+    color:#747474;
+    font-size: 13px;
+}
+
+div > *{
+    color: white;
+}
+
+.__creditos{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text2{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.subtext2{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.btnDejar{
+    border-radius: 20px;
+    font-size: 14px;
+}
