@@ -26,6 +26,12 @@
 }
 
 .bckgrnd > div > button{
-    background-color: white;
+    /* background-color: white; */
     margin: 10px, auto;
+}
+
+.__btnNavegar{
+    font-size: 15px;
+    background-color: black;
+    color: white;
 }

@@ -18,7 +18,6 @@ export class GenericsquareComponent {
   items: square[] = [{
     id: 1,
     img: "assets/mix1.png",
-    // img: "https://i.scdn.co/image/ab67616d0000b27363e163ead118db13035c323f",
     title: "Mix de canciones 1",
     desc: "Mago de Oz, Patricia Tapia y Manuel Seoane"
   }

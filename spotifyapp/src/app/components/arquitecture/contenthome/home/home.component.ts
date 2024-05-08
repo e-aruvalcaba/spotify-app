@@ -12,6 +12,8 @@ import { square } from '../../../../models/square.interface';
 })
 export class HomeComponent {
 
+  publi = "assets/publicidad.png";
+
   title1="Creado para Adrian Ruvalcaba Garcia";
   title2="Escuchado recientemente";
   title3="Volver a escuchar";
