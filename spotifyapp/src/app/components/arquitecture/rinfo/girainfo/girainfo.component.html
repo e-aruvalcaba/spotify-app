@@ -2,11 +2,15 @@
     <div class="card-body">
 
         <div class="col-12 d-flex justify-content-between align-items-center">
-            <p class="d-flex align-items-center m-0 __creditos">Créditos</p>
-            <a class="d-flex align-items-center btn">Mostrar todo</a>
+            <p class="d-flex align-items-center m-0 __creditos white">De gira</p>
+            <a class="d-flex align-items-center btn white">Mostrar todo</a>
         </div>
 
-        
+        @for(item of fechas; track item.id){
+            <app-girarecord [item]="item"></app-girarecord>
+        }@empty{
+            No hay datos de fechas disponibles
+        }
 
 
         <!-- <div class="col-12 d-flex">

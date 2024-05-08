@@ -1,0 +1,29 @@
+.reset{
+    padding: 0%!important;
+    margin: 0%!important;
+    /* font-size: 20px; */
+    /* margin-left: 5px !important; */
+}
+
+.__fecha{
+    background-color: black;
+    padding: 5px;
+    width: 45px;
+    border-radius: 7px;
+    color:white;
+    max-height: 60px;
+}
+
+.text1{
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 5px !important;
+}
+
+.text2{
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 5px !important;
+}

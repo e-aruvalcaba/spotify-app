@@ -1,0 +1,13 @@
+<div class="col-12 d-flex pb-2 align-items-center">
+    <div class="col-1 d-column __fecha">
+        <p class="reset">{{item?.date | date: 'MMMM'}}</p>
+        <p class="reset" style="font-size: 20px; margin-left: 5px!important;">{{item?.date | date: 'd'}}</p>
+    </div>
+    <div class="col-11 d-flex justify-content-start">
+        <div class="col-12 d-column">
+            <p class="reset text1">{{item?.state}}</p>
+            <p class="reset text1">{{item?.artist}}</p>
+            <p class="reset text2">{{item?.date | date: 'EEEE'}} {{ item?.time}} - {{ item?.location}}</p>
+        </div>    
+    </div>
+</div>
