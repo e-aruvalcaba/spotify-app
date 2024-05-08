@@ -1,0 +1,36 @@
+<div class=" pt-2">
+    <div class="col-12 __publicidad">
+        Publicidad aqui
+    </div>
+    <div class="col-12 pt-2 d-flex">
+        @for (item of favorite; track item.id) {
+            <div class="d-flex col-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3 square">
+                <!-- <app-square [item]="item"></app-square> -->
+                <app-favoriteartist [item]="item"></app-favoriteartist>
+            </div>
+        } @empty {
+        <h4>No hay datos para mostrar</h4>
+        }
+    </div>
+
+    <!-- Creado para blablabla -->
+    <div class="col-12 pt-3">
+        <app-genericsquare [title]="title1"></app-genericsquare>
+    </div>
+    <!-- Escuchado recientemente" -->
+    <div class="col-12">
+        <app-genericsquare [title]="title2"></app-genericsquare>
+    </div>
+    <!-- Volver a escuchar-->
+    <div class="col-12">
+        <app-genericsquare [title]="title3"></app-genericsquare>
+    </div>
+    <!-- Lo mejor de los artistas -->
+    <div class="col-12">
+        <app-genericsquare [title]="title4"></app-genericsquare>
+    </div>
+    <!-- Sugerencias para hoy -->
+    <div class="col-12">
+        <app-genericsquare [title]="title5"></app-genericsquare>
+    </div>
+</div>

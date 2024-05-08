@@ -1,30 +1,30 @@
-<div class="container-fluid">
-    <div class="row d-flex justify-content-between">
+<div class="container-fluid pt-2">
+    <div class="row d-flex">
         <!-- Comienza el sidebar -->
-        <div class="col-2 col-sm-3 col-xl-3 __sbar" style="max-width: 99%;"> 
+        <div class="col-2 col-sm-3 col-xl-3 __sbar" > 
             <app-sidebar></app-sidebar>
         </div>
 
         <!-- Comienza el contenido principal -->
-        <div class="col-10 col-sm col-md col-xl-6 __mcontent" style="max-width: 99%;">
+        <div class="col-10 col-sm-9 col-md col-xl-6 __mcontent" >
             <app-content></app-content>
         </div>
 
         <!-- Comienza el rightbar de informacion de la musica reproduciendo -->
-        <div class="d-none d-lg-flex col-xl-3 __info">
+        <div class="d-none d-xl-flex col-xl-3 __info">
             <app-rinfo></app-rinfo>
         </div>
 
         <!-- Comienza el reproductor al estilo footer -->
-        <div class="col-12 d-flex player ">
-            <div class="col justify-content-start">
-                soy la imagen e info
+        <div class="col-12 d-flex __player ">
+            <div class="col-3 justify-content-start">
+                <app-info></app-info>
             </div>
-            <div class="col justify-content-center">
-                Soy el player
+            <div class="col-6 justify-content-center">
+                <app-player></app-player>
             </div>
-            <div class="col justify-content-end">
-                soy el volumen
+            <div class="col-3 justify-content-end">
+                <app-utileria></app-utileria>
             </div>
         </div>
     </div>

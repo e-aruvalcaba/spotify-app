@@ -1,0 +1,20 @@
+img{
+    max-width: 95%;
+}
+
+.__square{
+    color:white;
+}
+
+.__desc{
+    font-size: 14px;
+    color: gray;
+}
+
+
+.__limit{
+    font-size: 11px;
+    width:50px;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
