@@ -8,8 +8,6 @@ import { ArtistinfoComponent } from './artistinfo/artistinfo.component';
 import { RinfoComponent } from './rinfo.component';
 import { GirarecordComponent } from './girainfo/girarecord/girarecord.component';
 
-
-
 @NgModule({
   declarations: [    
     RinfoComponent,

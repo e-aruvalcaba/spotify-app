@@ -1,10 +1,7 @@
-import { Component, Input, input } from '@angular/core';
-import { SquareComponent } from './square/square.component';
+import { Component, Input } from '@angular/core';
 import { square } from './../../../../models/square.interface';
 @Component({
   selector: 'app-genericsquare',
-  // standalone: true,
-  // imports: [SquareComponent],
   templateUrl: './genericsquare.component.html',
   styleUrl: './genericsquare.component.css'
 })

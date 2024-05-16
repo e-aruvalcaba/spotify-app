@@ -11,11 +11,8 @@ import { AlbumviewComponent } from './contenthome/content_utils/albumview/albumv
 import { LastescuchadoComponent } from './contenthome/lastescuchado/lastescuchado.component';
 import { SquareComponent } from './contenthome/genericsquare/square/square.component';
 
-import { square } from './../../models/square.interface'
-
 @NgModule({
   declarations: [
-    // square, 
     HomesearchComponent, 
     RecentsearchComponent, 
     ExplorarComponent, 

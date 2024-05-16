@@ -4,8 +4,6 @@ import { GirarecordComponent } from './girarecord/girarecord.component';
 
 @Component({
   selector: 'app-girainfo',
-  // standalone: true,
-  // imports: [GirarecordComponent],
   templateUrl: './girainfo.component.html',
   styleUrl: './girainfo.component.css'
 })
