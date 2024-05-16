@@ -30,3 +30,19 @@
     width: 30px;
     height: 30px;
 }
+
+.__searchInput{
+    border-radius: 7px;
+    animation: searchAppears 2s linear;
+}
+
+
+@keyframes searchAppears {
+    from{
+        opacity:0;
+    }
+    to{
+        left: 20px;
+        opacity:1;
+      }
+}

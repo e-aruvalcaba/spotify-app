@@ -18,7 +18,6 @@ export class ScrollableComponent {
   @Input() twoItems: square[] = []; //for option 2  --- square scrolls
 
   ngOnInit(){
-    console.log(this.oneItems)
   }
   
   @ViewChildren('listItem')
@@ -27,15 +26,6 @@ export class ScrollableComponent {
   @ViewChild('left') leftButton!: ElementRef<HTMLButtonElement>;
   @ViewChild('right') rightButton!: ElementRef<HTMLButtonElement>;
   @ViewChild('scroll') scrollImages!: ElementRef<HTMLDivElement>;
-
-
-  public ngAfterViewInit() {
-    console.log(
-      this.scrollable.find(itm =>
-        itm.nativeElement.getAttribute('data-id') === 'my-element-id'
-      )
-    )
-  }
 
   checkScroll() {
     const scrollLength = this.scrollImages.nativeElement.scrollWidth - this.scrollImages.nativeElement.clientWidth;

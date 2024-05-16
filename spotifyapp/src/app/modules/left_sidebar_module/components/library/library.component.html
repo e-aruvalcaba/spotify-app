@@ -1,14 +1,14 @@
 <div class="d-flex __leftside __start">
-    <div class="col-12 d-column">
+    <div class="col-12 d-column" style="padding: 10px;">
         <div class="col-12 d-flex justify-content-start align-items-center __mg">
-            <div class="col-2 d-flex justify-content-center">
+            <div class="col-1 d-flex justify-content-center">
                 <span> <i class="fa-solid fa-book"></i> </span>
             </div>
-            <div class="col-10 d-flex align-items-center justify-content-start">
+            <div class="col-11 d-flex align-items-center justify-content-start">
                 <div class="col-10  justify-content-start">
                     <p class="m-0 align-items-center">Tu Biblioteca</p>
                 </div>
-                <div class="col-2 d-flex justify-content-end">    
+                <div class="col-2 d-flex justify-content-end">
                     <div class="col-6">
                         <span> <i class="fa-solid fa-plus"></i> </span>
                     </div>
@@ -19,30 +19,29 @@
             </div>
         </div>
 
-        <!-- <div class="col-12 d-flex align-items-center justify-content-between align-items-center __mg">
-            <button class="__btn_scroll"> <span> <i class="fa-solid fa-arrow-left"></i> </span></button>
-             <button class="__btn_scroll"> <span> <i class="fa-solid fa-arrow-right"></i> </span> </button>
-        </div> -->
-
         <app-scrollable [tipo]=0 [zeroItems]=labels></app-scrollable>
 
-        <!-- <div class="col-12 d-flex align-items-center justify-content-start align-items-center __mg"> -->
-            <!-- <button class="__btn_scroll"> <span> <i class="fa-solid fa-arrow-left"></i> </span></button>
-            <button class="__btn_scroll"> <span> <i class="fa-solid fa-arrow-right"></i> </span> </button>
-            @for (item of labels; track $index) {
-                <div class="col-2 justify-content-center p-1 __badge">
-                    <p>{{item.text}}</p>
+        <!-- Library -->
+
+        <div class="col-12 d-flex justify-content-start align-items-center __mg">
+            <div class="col-1 d-flex justify-content-center" >
+                <span style="font-size: 1.2em;" (click)="activeSearch()"> <i class="fa-solid fa-magnifying-glass"></i> </span>
+            </div>
+            <div class="col-11 d-flex align-items-center justify-content-start">
+                <div class="col-9 justify-content-start">
+                   @if(searchActive){
+                    <input class="__searchInput" type="text">
+                   }    
                 </div>
-            } -->
-
-            <!-- <app-scrollable [tipo]=1 [zeroItems]=labels></app-scrollable> -->
-            
-        <!-- </div> -->
-
-        <div class="col-12 d-flex justify-content-center align-items-center __mg">
-      
-            <p>Aqui va el componente de biblioteca</p>
-
+                <div class="col-3 d-flex align-items-center justify-content-end">
+                    <div class="col-9">
+                        <p class="m-0 align-items-center">Recientes</p>
+                    </div>
+                    <div class="col-3 justify-content-end">
+                        <span style="font-size: 1.2em;"> <i class="fa-solid fa-bars"></i> </span>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
