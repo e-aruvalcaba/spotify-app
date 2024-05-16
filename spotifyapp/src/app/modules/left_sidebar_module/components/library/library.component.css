@@ -1,0 +1,32 @@
+.__mg{
+    margin: 17px 0 17px 0;
+    font-size: 14px;
+    font-weight: bold;
+    overflow-x: hidden;
+}
+
+.__start{
+    background-color: #2B2B2B !important;
+    border-radius: 7px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.__leftside{
+    max-height: 77vh;
+    height: 77vh;
+}
+
+.__badge{
+    margin: 0 5px 0 5px;
+    max-height: 30px;
+    width: auto;
+    border-radius: 7px;
+    background-color: #434242
+}
+
+.__btn_scroll{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}

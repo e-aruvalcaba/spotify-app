@@ -1,1 +1,48 @@
-<p>library works!</p>
+<div class="d-flex __leftside __start">
+    <div class="col-12 d-column">
+        <div class="col-12 d-flex justify-content-start align-items-center __mg">
+            <div class="col-2 d-flex justify-content-center">
+                <span> <i class="fa-solid fa-book"></i> </span>
+            </div>
+            <div class="col-10 d-flex align-items-center justify-content-start">
+                <div class="col-10  justify-content-start">
+                    <p class="m-0 align-items-center">Tu Biblioteca</p>
+                </div>
+                <div class="col-2 d-flex justify-content-end">    
+                    <div class="col-6">
+                        <span> <i class="fa-solid fa-plus"></i> </span>
+                    </div>
+                    <div class="col-6">
+                        <span> <i class="fa-solid fa-arrow-right"></i> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="col-12 d-flex align-items-center justify-content-between align-items-center __mg">
+            <button class="__btn_scroll"> <span> <i class="fa-solid fa-arrow-left"></i> </span></button>
+             <button class="__btn_scroll"> <span> <i class="fa-solid fa-arrow-right"></i> </span> </button>
+        </div> -->
+
+        <app-scrollable></app-scrollable>
+
+        <div class="col-12 d-flex align-items-center justify-content-start align-items-center __mg">
+            <button class="__btn_scroll"> <span> <i class="fa-solid fa-arrow-left"></i> </span></button>
+            <button class="__btn_scroll"> <span> <i class="fa-solid fa-arrow-right"></i> </span> </button>
+            @for (item of labels; track $index) {
+                <div class="col-2 justify-content-center p-1 __badge">
+                    <p>{{item.text}}</p>
+                </div>
+            }
+            
+        </div>
+
+        <div class="col-12 d-flex justify-content-center align-items-center __mg">
+      
+            <p>Aqui va el componente de biblioteca</p>
+
+        </div>
+
+
+    </div>
+</div>
