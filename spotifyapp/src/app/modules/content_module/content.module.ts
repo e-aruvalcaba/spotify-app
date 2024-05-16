@@ -6,10 +6,9 @@ import { ExplorarComponent } from './contenthome/content_utils/search/explorar/e
 import { RecentsearchComponent } from './contenthome/content_utils/search/recentsearch/recentsearch.component';
 import { HomesearchComponent } from './contenthome/content_utils/search/homesearch/homesearch.component';
 // import { FavoriteartistComponent } from './contenthome/favoriteartist/favoriteartist.component';
-import { GenericsquareComponent } from './contenthome/genericsquare/genericsquare.component';
 import { AlbumviewComponent } from './contenthome/content_utils/albumview/albumview.component';
 import { LastescuchadoComponent } from './contenthome/lastescuchado/lastescuchado.component';
-import { SquareComponent } from './contenthome/genericsquare/square/square.component';
+import { SquareComponent } from '../../components/square/square.component';
 import { ScrollableComponent } from '../../components/scrollable/scrollable.component';
 
 @NgModule({
@@ -17,9 +16,6 @@ import { ScrollableComponent } from '../../components/scrollable/scrollable.comp
     HomesearchComponent, 
     RecentsearchComponent, 
     ExplorarComponent, 
-    // FavoriteartistComponent,
-    SquareComponent,
-    // GenericsquareComponent,
     AlbumviewComponent,
     ExplorarComponent,
     HomeComponent,
@@ -35,9 +31,6 @@ import { ScrollableComponent } from '../../components/scrollable/scrollable.comp
     RecentsearchComponent, 
     ExplorarComponent, 
     HomeComponent,
-    // FavoriteartistComponent,
-    SquareComponent,
-    // GenericsquareComponent,
     AlbumviewComponent,
     ExplorarComponent,
     RecentsearchComponent,

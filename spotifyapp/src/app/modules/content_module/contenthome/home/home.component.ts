@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { square } from './../../../../models/square.interface';
+import { items } from './../../../../data/content.data'
 
 @Component({
   selector: 'app-homeContent',
@@ -8,6 +9,7 @@ import { square } from './../../../../models/square.interface';
 })
 export class HomeComponent {
 
+  items:square[] = items;
   publi = "assets/publicidad.png";
 
   title1="Creado para Adrian Ruvalcaba Garcia";

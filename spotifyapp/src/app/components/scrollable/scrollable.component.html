@@ -11,6 +11,8 @@
     <div class="child d-flex align-items-center badge col-2 justify-content-center p-1 __badge">
       <p class="m-0">{{item.text}}</p>
     </div>
+    }@empty {
+    <h4>No hay datos para mostrar</h4>
     }
 
     }@else if(tipo==1){
@@ -23,13 +25,27 @@
         <p class="__desc __limit __white">{{item?.desc}}</p>
       </div>
     </div>
+    }@empty {
+    <h4>No hay datos para mostrar</h4>
     }
 
     }@else{
-    <div class="child">
-      <p>PRUEBAS 2</p>
+    <!-- OPCION PARA EL CUADRO -->
+    <!-- <h4 class="__title">
+      {{title}}
+    </h4> -->
+
+    <div class="col-12 __squares d-flex scrolling-wrapper">
+      @for (item of twoItems; track item.id) {
+      <div class="d-flex col-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3 square">
+        <app-square [item]="item"></app-square>
+      </div>
+      } @empty {
+      <h4>No hay datos para mostrar</h4>
+      }
     </div>
     }
+
   </div>
   <button #right class="right" (click)="rightScroll()">
     <i class="fa-solid fa-chevron-right "></i>

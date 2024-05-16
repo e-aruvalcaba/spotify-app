@@ -98,10 +98,18 @@ button {
     background-color: #434242
 }
 
-img{
-    max-width: 95%;
-}
+/*
+For Circular generic artist
+*/
+
 
 .__white{
     color:white;
+}
+
+
+/*** For generic square component */
+
+.__title {
+    color: white;
 }

@@ -1,19 +1,21 @@
 import { Component, ElementRef, HostListener, Input, QueryList, ViewChild, ViewChildren, } from '@angular/core';
 import { label } from './../../models/label.interface';
 import { square } from '../../models/square.interface';
+import { SquareComponent } from '../square/square.component';
 @Component({
   selector: 'app-scrollable',
   standalone: true,
-  imports: [],
+  imports: [SquareComponent],
   templateUrl: './scrollable.component.html',
   styleUrl: './scrollable.component.css'
 })
 export class ScrollableComponent {
 
+  @Input() title: string="";
   @Input() tipo: number = 0;
   @Input() zeroItems: label[] = []; //for option 0 --- badges
   @Input() oneItems: square[] = []; //for option 1  --- circle scrolls
-  @Input() twoItems: label[] = []; //for option 2  --- square scrolls
+  @Input() twoItems: square[] = []; //for option 2  --- square scrolls
 
   ngOnInit(){
     console.log(this.oneItems)

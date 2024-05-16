@@ -1,19 +1,6 @@
-import { Component, Input } from '@angular/core';
-import { square } from './../../../../models/square.interface';
-@Component({
-  selector: 'app-genericsquare',
-  standalone: true,
-  imports: [],
-  templateUrl: './genericsquare.component.html',
-  styleUrl: './genericsquare.component.css'
-})
-export class GenericsquareComponent {
-
-  @Input() title = "";
-
-  //DATOS DUMMY PARA GENERIC SQUARES
-
-  items: square[] = [{
+ import { square } from './../models/square.interface';
+ 
+export const items: square[] = [{
     id: 1,
     img: "assets/mix1.png",
     title: "Mix de canciones 1",
@@ -39,5 +26,19 @@ export class GenericsquareComponent {
     img: "assets/mix5.png",
     title: "Mix especial de navidad",
     desc: "Tatiana, Te Cepillo el tin"
+  },{
+    id: 6,
+    img: "assets/mix4.png",
+    title: "Mix de canciones 6",
+    desc: "Conejitos peruanos y Siza Toaquiza"
+  },{
+    id: 7,
+    img: "assets/mix4.png",
+    title: "Mix de canciones 7",
+    desc: "Los dos carnales, Cartel de Santa, Ramon Ayala"
+  },{
+    id: 8,
+    img: "assets/mix4.png",
+    title: "Mix de canciones Halloween",
+    desc: "Chakira"
   }];
-}
