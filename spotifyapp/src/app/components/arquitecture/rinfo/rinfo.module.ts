@@ -22,12 +22,6 @@ import { GirarecordComponent } from './girainfo/girarecord/girarecord.component'
   imports: [
     CommonModule,
     DatePipe,
-    // RinfoComponent,
-    // ArtistinfoComponent, 
-    // CreditinfoComponent, 
-    // GirainfoComponent, 
-    // ListareproduccionComponent, 
-    // SonginfoComponent
   ],exports:[
     RinfoComponent,
     ArtistinfoComponent, 

@@ -3,8 +3,8 @@ import { SquareComponent } from './square/square.component';
 import { square } from './../../../../../models/square.interface';
 @Component({
   selector: 'app-genericsquare',
-  standalone: true,
-  imports: [SquareComponent],
+  // standalone: true,
+  // imports: [SquareComponent],
   templateUrl: './genericsquare.component.html',
   styleUrl: './genericsquare.component.css'
 })

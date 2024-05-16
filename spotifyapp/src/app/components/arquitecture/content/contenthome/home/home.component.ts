@@ -5,8 +5,8 @@ import { square } from './../../../../../models/square.interface';
 
 @Component({
   selector: 'app-homeContent',
-  standalone: true,
-  imports: [FavoriteartistComponent, GenericsquareComponent],
+  // standalone: true,
+  // imports: [FavoriteartistComponent, GenericsquareComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
