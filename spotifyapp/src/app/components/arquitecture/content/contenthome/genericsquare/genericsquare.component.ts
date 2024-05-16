@@ -1,7 +1,6 @@
 import { Component, Input, input } from '@angular/core';
 import { SquareComponent } from './square/square.component';
-import { square } from '../../../../models/square.interface';
-
+import { square } from './../../../../../models/square.interface';
 @Component({
   selector: 'app-genericsquare',
   standalone: true,
