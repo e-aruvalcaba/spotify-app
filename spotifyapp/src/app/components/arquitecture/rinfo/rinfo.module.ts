@@ -1,26 +1,41 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { SonginfoComponent } from './songinfo/songinfo.component';
 import { ListareproduccionComponent } from './listareproduccion/listareproduccion.component';
 import { GirainfoComponent } from './girainfo/girainfo.component';
 import { CreditinfoComponent } from './creditinfo/creditinfo.component';
 import { ArtistinfoComponent } from './artistinfo/artistinfo.component';
 import { RinfoComponent } from './rinfo.component';
+import { GirarecordComponent } from './girainfo/girarecord/girarecord.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [    
+    RinfoComponent,
+    ArtistinfoComponent, 
+    CreditinfoComponent, 
+    GirarecordComponent,
+    GirainfoComponent, 
+    ListareproduccionComponent, 
+    SonginfoComponent],
   imports: [
     CommonModule,
+    DatePipe,
+    // RinfoComponent,
+    // ArtistinfoComponent, 
+    // CreditinfoComponent, 
+    // GirainfoComponent, 
+    // ListareproduccionComponent, 
+    // SonginfoComponent
+  ],exports:[
     RinfoComponent,
     ArtistinfoComponent, 
     CreditinfoComponent, 
     GirainfoComponent, 
+    GirarecordComponent,
     ListareproduccionComponent, 
     SonginfoComponent
-  ],exports:[
-    RinfoComponent
   ]
 })
 export class RinfoModule { }

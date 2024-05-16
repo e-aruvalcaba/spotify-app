@@ -4,8 +4,8 @@ import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-girarecord',
-  standalone: true,
-  imports: [DatePipe],
+  // standalone: true,
+  // imports: [DatePipe],
   templateUrl: './girarecord.component.html',
   styleUrl: './girarecord.component.css'
 })

@@ -1,0 +1,96 @@
+<!-- Barra de botones siguiente y atras, Explorar premium notificaciones etc -->
+<div class="mt-2">
+    <div class="col-12 d-flex bckgrnd">
+        <div class="col-4 col-md col-lg d-flex justify-content-start">
+            <div class="col-4 col-md-2 col-lg-2 col-xl-2 col-xxl-1">
+                <button type="button" class="btn d-flex justify-content-center align-items-center 
+                btn-default btn-circle mr-1 __btnNavegar"><i class="fa-solid fa-chevron-left"></i> </button>
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn d-flex justify-content-center align-items-center 
+                btn-default btn-circle ml-1 __btnNavegar">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-8 col-md-6 col-lg-5 col-xxl-4 d-flex justify-content-between">
+            <button type="button" class="__premiumBtn">Explorar Premium</button>
+            <button type="button" class="btn d-flex justify-content-center align-items-center  
+            btn-default btn-circle __btnNavegar">
+                <i class="fa-regular fa-bell"></i>
+            </button>
+            <button type="button" class="btn d-flex justify-content-center align-items-center  
+            btn-default btn-circle __btnNavegar">
+                <i class="fa-solid fa-people-group"></i>
+            </button>
+            <button type="button" class="btn d-flex justify-content-center align-items-center  
+            btn-default btn-circle __btnNavegar">
+                <i class="fa-regular fa-user"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div class="main_container">
+
+        @if (busqueda) {
+        <app-homesearch></app-homesearch>
+        }@else{
+        <app-homeContent></app-homeContent>
+        }
+
+
+    </div>
+
+</div>
+
+<!--  
+
+     <div class="panel-body">
+                            <h4>Normal Circle Buttons</h4>
+                            <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary btn-circle"><i class="fa fa-list"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-circle"><i class="fa fa-link"></i>
+                            </button>
+                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-check"></i>
+                            </button>
+                            <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-times"></i>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-circle"><i class="fa fa-heart"></i>
+                            </button>
+                            <br>
+                            <br>
+                            <h4>Large Circle Buttons</h4>
+                            <button type="button" class="btn btn-default btn-circle btn-lg"><i class="fa fa-check"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary btn-circle btn-lg"><i class="fa fa-list"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-circle btn-lg"><i class="fa fa-link"></i>
+                            </button>
+                            <button type="button" class="btn btn-info btn-circle btn-lg"><i class="fa fa-check"></i>
+                            </button>
+                            <button type="button" class="btn btn-warning btn-circle btn-lg"><i class="fa fa-times"></i>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-circle btn-lg"><i class="fa fa-heart"></i>
+                            </button>
+                            <br>
+                            <br>
+                            <h4>Extra Large Circle Buttons</h4>
+                            <button type="button" class="btn btn-default btn-circle btn-xl"><i class="fa fa-check"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-circle btn-xl"><i class="fa fa-link"></i>
+                            </button>
+                            <button type="button" class="btn btn-info btn-circle btn-xl"><i class="fa fa-check"></i>
+                            </button>
+                            <button type="button" class="btn btn-warning btn-circle btn-xl"><i class="fa fa-times"></i>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-circle btn-xl"><i class="fa fa-heart"></i>
+                            </button>
+                        </div>
+
+
+-->
