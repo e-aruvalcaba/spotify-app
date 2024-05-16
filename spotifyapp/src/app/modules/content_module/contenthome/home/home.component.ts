@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FavoriteartistComponent } from '../favoriteartist/favoriteartist.component';
 import { GenericsquareComponent } from '../genericsquare/genericsquare.component';
-import { square } from './../../../../../models/square.interface';
+import { square } from './../../../../models/square.interface';
 
 @Component({
   selector: 'app-homeContent',

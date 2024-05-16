@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { square } from './../../../../../models/square.interface';
+import { square } from './../../../../models/square.interface';
 
 @Component({
   selector: 'app-favoriteartist',

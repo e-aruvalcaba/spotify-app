@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { girarecord } from '../../../../models/girarecord.interface';
+import { girarecord } from '../../../models/girarecord.interface';
 import { GirarecordComponent } from './girarecord/girarecord.component';
 
 @Component({
