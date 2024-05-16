@@ -1,7 +1,7 @@
 .cover {
     position: relative;
     padding: 0px 30px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .left {
@@ -9,6 +9,13 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    background-color: gray;
+    border-radius: 15px;
+    height: 20px;
+    width: 20px;
+    font-size: 14px;
+    padding: 0px;
+    margin-left: 3px;
 }
 
 .right {
@@ -16,12 +23,21 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+
+    background-color: gray;
+    border-radius: 15px;
+    height: 20px;
+    width: 20px;
+    font-size: 14px;
+    padding: 0px;
+    margin-right: 3px;
 }
 
 .scroll-images {
+    border-radius: 15px;
     position: relative;
     width: 100%;
-    padding: 40px 0px;
+    /* padding: 40px 0px; */
     height: auto;
     display: flex;
     flex-wrap: nowrap;
@@ -35,7 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 250px;
+    /* min-width: 250px; */
     height: 200px;
     padding: 0px 15px;
     margin: 1px 10px;
@@ -45,7 +61,7 @@
     box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
 }
 
-.child img, .child > svg {
+.child img, .child > .svg {
     position: absolute;
     margin-top: -195px;
     width: 80px;
@@ -72,4 +88,12 @@ button {
     outline: none;
     cursor: pointer;
     font-size: 25px;
+}
+
+.__badge{
+    margin: 0 5px 0 5px;
+    max-height: 30px;
+    width: auto;
+    border-radius: 7px;
+    background-color: #434242
 }

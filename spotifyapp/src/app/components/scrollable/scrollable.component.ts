@@ -1,5 +1,5 @@
-import { Component, ElementRef, HostListener, QueryList, ViewChild, ViewChildren, } from '@angular/core';
-
+import { Component, ElementRef, HostListener, Input, QueryList, ViewChild, ViewChildren, } from '@angular/core';
+import { label } from './../../models/label.interface';
 @Component({
   selector: 'app-scrollable',
   standalone: true,
@@ -9,6 +9,11 @@ import { Component, ElementRef, HostListener, QueryList, ViewChild, ViewChildren
 })
 export class ScrollableComponent {
 
+  @Input() tipo: number = 0;
+  @Input() zeroItems: label[] = []; //for option 0 --- badges
+  @Input() oneItems: label[] = []; //for option 1  --- circle scrolls
+  @Input() twoItems: label[] = []; //for option 2  --- square scrolls
+  
   @ViewChildren('listItem')
   public scrollable!: QueryList<ElementRef<HTMLLIElement>>
 

@@ -24,18 +24,20 @@
              <button class="__btn_scroll"> <span> <i class="fa-solid fa-arrow-right"></i> </span> </button>
         </div> -->
 
-        <app-scrollable></app-scrollable>
+        <app-scrollable [tipo]=0 [zeroItems]=labels></app-scrollable>
 
-        <div class="col-12 d-flex align-items-center justify-content-start align-items-center __mg">
-            <button class="__btn_scroll"> <span> <i class="fa-solid fa-arrow-left"></i> </span></button>
+        <!-- <div class="col-12 d-flex align-items-center justify-content-start align-items-center __mg"> -->
+            <!-- <button class="__btn_scroll"> <span> <i class="fa-solid fa-arrow-left"></i> </span></button>
             <button class="__btn_scroll"> <span> <i class="fa-solid fa-arrow-right"></i> </span> </button>
             @for (item of labels; track $index) {
                 <div class="col-2 justify-content-center p-1 __badge">
                     <p>{{item.text}}</p>
                 </div>
-            }
+            } -->
+
+            <!-- <app-scrollable [tipo]=1 [zeroItems]=labels></app-scrollable> -->
             
-        </div>
+        <!-- </div> -->
 
         <div class="col-12 d-flex justify-content-center align-items-center __mg">
       
