@@ -1,5 +1,6 @@
 .__sidebar{
-    background-color: #2B2B2B;
+    /* background-color: #2B2B2B; */
+    background-color: transparent!important;
     border-radius: 7px;
     height: 90vh;
 }
@@ -7,5 +8,5 @@
 
 .__side{
     border-radius: 7px;
-    background-color: #2B2B2B!important;
+    /* background-color: #2B2B2B!important; */
 }
