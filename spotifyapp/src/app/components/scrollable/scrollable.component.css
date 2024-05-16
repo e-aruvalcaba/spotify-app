@@ -97,3 +97,11 @@ button {
     border-radius: 7px;
     background-color: #434242
 }
+
+img{
+    max-width: 95%;
+}
+
+.__white{
+    color:white;
+}

@@ -5,20 +5,21 @@ import { HomeComponent } from './contenthome/home/home.component';
 import { ExplorarComponent } from './contenthome/content_utils/search/explorar/explorar.component';
 import { RecentsearchComponent } from './contenthome/content_utils/search/recentsearch/recentsearch.component';
 import { HomesearchComponent } from './contenthome/content_utils/search/homesearch/homesearch.component';
-import { FavoriteartistComponent } from './contenthome/favoriteartist/favoriteartist.component';
+// import { FavoriteartistComponent } from './contenthome/favoriteartist/favoriteartist.component';
 import { GenericsquareComponent } from './contenthome/genericsquare/genericsquare.component';
 import { AlbumviewComponent } from './contenthome/content_utils/albumview/albumview.component';
 import { LastescuchadoComponent } from './contenthome/lastescuchado/lastescuchado.component';
 import { SquareComponent } from './contenthome/genericsquare/square/square.component';
+import { ScrollableComponent } from '../../components/scrollable/scrollable.component';
 
 @NgModule({
   declarations: [
     HomesearchComponent, 
     RecentsearchComponent, 
     ExplorarComponent, 
-    FavoriteartistComponent,
+    // FavoriteartistComponent,
     SquareComponent,
-    GenericsquareComponent,
+    // GenericsquareComponent,
     AlbumviewComponent,
     ExplorarComponent,
     HomeComponent,
@@ -27,15 +28,16 @@ import { SquareComponent } from './contenthome/genericsquare/square/square.compo
     ContentComponent],
   imports: [
     CommonModule,
+    ScrollableComponent
   ],
   exports:[
     HomesearchComponent, 
     RecentsearchComponent, 
     ExplorarComponent, 
     HomeComponent,
-    FavoriteartistComponent,
+    // FavoriteartistComponent,
     SquareComponent,
-    GenericsquareComponent,
+    // GenericsquareComponent,
     AlbumviewComponent,
     ExplorarComponent,
     RecentsearchComponent,

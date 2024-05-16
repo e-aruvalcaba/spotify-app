@@ -2,7 +2,7 @@
   <button #left class="left" (click)="leftScroll()">
     <i class="fa-solid fa-chevron-left"></i>
   </button>
-  
+
   <div #scroll class="scroll-images">
 
     @if (tipo==0){
@@ -15,17 +15,16 @@
 
     }@else if(tipo==1){
 
-    <div class="child">
-      <p>PRUEBAS 1</p>
+    @for (item of oneItems; track $index) {
+    <div class="d-column col-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3 square">
+      <img class="pt-2 img-fluid rounded-circle" src={{item?.img}} alt="">
+      <div class="__square">
+        <h6 class="pt2 __white">{{item?.title}}</h6>
+        <p class="__desc __limit __white">{{item?.desc}}</p>
+      </div>
     </div>
-    
-    <div class="child">
-      <p>PRUEBAS 1</p>
-    </div>
-    
-    <div class="child">
-      <p>PRUEBAS 1</p>
-    </div>
+    }
+
     }@else{
     <div class="child">
       <p>PRUEBAS 2</p>
