@@ -6,11 +6,12 @@ import { InfoComponent } from '../../modules/player_module/playerComponents/info
 import { UtileriaComponent } from '../../modules/player_module/playerComponents/utileria/utileria.component';
 import { PlayerComponent } from '../../modules/player_module/playerComponents/player/player.component';
 import { PlayerModule } from '../../modules/player_module/player.module';
+import { LeftSidebarModule } from '../../modules/left_sidebar_module/sidebar.module';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [SidebarComponent, ContentModule, RinfoModule, PlayerModule],
+  imports: [LeftSidebarModule, ContentModule, RinfoModule, PlayerModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
