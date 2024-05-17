@@ -16,6 +16,7 @@
     font-size: 14px;
     padding: 0px;
     margin-left: 3px;
+    transition: 0.3 linear;
 }
 
 .right {
@@ -23,7 +24,6 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-
     background-color: gray;
     border-radius: 15px;
     height: 20px;
@@ -31,13 +31,17 @@
     font-size: 14px;
     padding: 0px;
     margin-right: 3px;
+    transition: 0.3 linear;
+}
+
+.hidden{
+    display: none;
 }
 
 .scroll-images {
     border-radius: 15px;
     position: relative;
     width: 100%;
-    /* padding: 40px 0px; */
     height: auto;
     display: flex;
     flex-wrap: nowrap;
