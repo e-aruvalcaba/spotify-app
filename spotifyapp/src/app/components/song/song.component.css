@@ -1,0 +1,43 @@
+.cardSpoti {
+    width: 100%;
+    /* background-color: #252525!important; 
+     */
+    background-color: transparent !important;
+    color: #747474;
+    font-size: 12px;
+    border: none;
+    transition: 0.3s;
+}
+
+.cardSpoti:hover {
+    border: black;
+    background-color: #252525 !important;
+}
+
+.card-body{
+    padding: 0.5em!important;
+}
+
+
+.white {
+    color: white;
+}
+
+.reset {
+    margin: auto;
+
+}
+
+.text1 {
+    font-size: 16px;
+}
+
+.text2 {
+    font-size: 12px;
+    color: #747474;
+}
+
+.__spker{
+    font-size: 20px;
+    color: limegreen;
+}

@@ -4,6 +4,7 @@ import { SidebarComponent } from './sidebar.component';
 import { StartComponent } from './components/start/start.component';
 import { LibraryComponent } from './components/library/library.component';
 import { ScrollableComponent } from '../../components/scrollable/scrollable.component';
+import { SongComponent } from '../../components/song/song.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ScrollableComponent } from '../../components/scrollable/scrollable.comp
   ],
   imports: [
     CommonModule,
-    ScrollableComponent
+    ScrollableComponent,
+    SongComponent
   ],
   exports: [
     SidebarComponent,

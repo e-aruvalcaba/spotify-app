@@ -102,6 +102,9 @@ button {
 For Circular generic artist
 */
 
+.square{
+    margin-right: 12px;
+}
 
 .__white{
     color:white;

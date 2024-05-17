@@ -1,0 +1,23 @@
+<div class="card cardSpoti">
+    <div class="card-body">
+        <div class="col-12 d-flex align-items-center">
+            <div class="col-2 d-flex __fecha">
+                <!-- <img src="https://i.scdn.co/image/ab67616d0000b27363e163ead118db13035c323f" class="img-fluid" alt=""> -->
+                <img src={{item?.albumImg}} class="img-fluid" alt="">
+            </div>
+            <div class="col-9 d-flex justify-content-start align-items-center" style="margin-left: 5px;">
+                <div class="col-12 d-column">
+                    <p class="reset text1 white">{{item?.album}}</p>
+                    <p class="reset text2 white">{{item?.artist}}</p>
+                </div>
+            </div>
+            <div class="col-1 d-flex justify-content-center align-items-center" style="margin-left: 5px;">
+                <div class="col-12 d-column">
+                    @if(playing){
+                        <span class="__spker"><i class="fa-solid fa-volume-low"></i></span>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -10,6 +10,10 @@
     min-height: 10vh;
 }
 
+._sbar{
+  overflow-y: scroll;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;

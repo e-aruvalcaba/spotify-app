@@ -21,17 +21,18 @@
 
         <app-scrollable [tipo]=0 [zeroItems]=labels></app-scrollable>
 
-        <!-- Library -->
+        <!-- Search and Library -->
 
         <div class="col-12 d-flex justify-content-start align-items-center __mg">
-            <div class="col-1 d-flex justify-content-center" >
-                <span style="font-size: 1.2em;" (click)="activeSearch()"> <i class="fa-solid fa-magnifying-glass"></i> </span>
+            <div class="col-1 d-flex justify-content-center">
+                <span style="font-size: 1.2em;" (click)="activeSearch()"> <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
             </div>
             <div class="col-11 d-flex align-items-center justify-content-start">
                 <div class="col-9 justify-content-start">
-                   @if(searchActive){
+                    @if(searchActive){
                     <input class="__searchInput" type="text">
-                   }    
+                    }
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-end">
                     <div class="col-9">
@@ -42,6 +43,16 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="col-12 d-column justify-content-start align-items-center __mg __songs">
+
+            @for (item of items; track item.id) {
+
+                <div class="col-12">
+                    <app-song [item]=item></app-song>
+                </div>
+            }
         </div>
 
 

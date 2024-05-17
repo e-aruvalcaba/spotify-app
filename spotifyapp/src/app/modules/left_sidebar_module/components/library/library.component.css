@@ -36,6 +36,11 @@
     animation: searchAppears 2s linear;
 }
 
+.__songs{
+    max-height: 60vh;
+    scrollbar-width: none;
+}
+
 
 @keyframes searchAppears {
     from{
